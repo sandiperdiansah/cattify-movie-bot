@@ -1,0 +1,47 @@
+{
+    "author": {
+        "email": "cattify.support@gmail.com",
+        "name": "cattify",
+        "url": "https://cattify.com"
+    },
+    "dependencies": {
+        "dotenv": "^17.4.2",
+        "sharp": "^0.34.5",
+        "telegraf": "^4.16.3",
+        "winston": "^3.19.0"
+    },
+    "description": "cattify movie bot",
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.2.1",
+        "globals": "^17.5.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.4.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.3",
+        "tsx": "^4.21.0"
+    },
+    "keywords": [],
+    "license": "ISC",
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,md}": [
+            "prettier --write"
+        ]
+    },
+    "main": "index.js",
+    "name": "cattify-movie-bot",
+    "packageManager": "pnpm@10.29.3",
+    "scripts": {
+        "dev": "nodemon",
+        "format": "prettier --write \"src/**/*.{js,ts}\"",
+        "lint": "eslint",
+        "prepare": "husky",
+        "start": "node src/index.js"
+    },
+    "type": "module",
+    "version": "1.0.0"
+}
